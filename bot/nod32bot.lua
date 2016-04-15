@@ -216,7 +216,6 @@ function create_config( )
     "banhammer",
     "boobs",
     "bot_manager",
-    "botnumber",
     "broadcast",
     "calc",
     "download_media",
@@ -245,14 +244,14 @@ function create_config( )
     "time",
     "version"
     },
-	    sudo_users = {158990680},--Sudo users
+	    sudo_users = {181742153},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-https://github.com/BH-YAGHI/NOD32-BOT.git
+https://github.com/seedteam/teleseed.git
 
-channel : @Nod32team
-sodu : @behrooZyaghi
+channel : @iranpower_ch
+sodu : @shayan31323
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -317,121 +316,119 @@ Only sudo users can run this command
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
-ch: @Nod32team
+ch: @iranpower_ch
+sudo:@shayan31323
 
 ]],
     help_text = [[
-NOD32 Commands list :
+iranpower Commands list :
  
 1-banhammer list ^
  
-!kick [username|id]
+kick [username|id]
 (کیک کردن شخص (حتی با ریپلی)
 
-!ban [ username|id]
+ban [ username|id]
 (بن کردن افراد (حتی با ریپلی)
 
-!unban [id]
+unban [id]
 (انبن کردن افراد (همراه ایدی)
 
-!kickinactive
+kickinactive
 حذف اعضای غیرغعال گروه
 
-!kickme
+kickme
 خروج از گروه
 
 2-Statistics list ^
 
-!who
+who
 لیست+ایدی همه اعضا
 
-!all
+all
 دریافت اطلاعات کلی گروه
 
-!stats
+stats
 امار کلی گروه
 
-!modlist
+modlist
 لیست مدیران گروه
 
-!banlist
+banlist
 لیست اعضا بن شده
 
 3-Rate Member ^
 
-!setowner [id]
+setowner [id]
 (id ایجاد مدیر جدید (همراه 
 
-!promote [username]
+promote [username]
 (ایجاد ادمین جدید (همراه ریپلی)
 
-!demote [username]
+demote [username]
 (برکنار کردن ادمین (همراه ریپلی)
 
 4-General changes ^
 
-!setname [name]
+setname [name]
 ایجاد اسم جدید برای گروه
 
-!setphoto
+setphoto
 ایجاد عکس جدید برای پروفایل گروه
 
 !set rules <text>
 ایجاد قانون جدید برای گروه
 
-!set about <text>
+set about <text>
 ایجاد درباره گروه
 
-!setflood [value]
+setflood [value]
 حساسیت به اسپم در گروه
 
 5-View details ^
 
-!about
+about
 درباره گروه
 
-!rules
+rules
 قوانین گروه
 
-!settings
+settings
 دیدن تنظیمات فعلی گروه
 
-!help
+help
 لیست دستورات ربات
 
 6-Security Group ^
 
-!lock member 
+lock member 
 قفل ورود اعضا جدید
 
-!lock join
+lock join
 قفل ورود اعضا جدید توسط لینک
 
-!lock name
+lock name
 قفل اسم گروه
 
-!lock chat
-قفل چت ممنوع
-
-!lock ads
+lock ads
 قفل تبلیغات
 
-!lock leave
+lock leave
 قفل خروج=بن گروه
 
-!lock fosh
+lock fosh
 ممنوع کردن فحش
 
-!lock chat
+lock chat
 قفل چت ممنوع گروه
 
-!antibot enable 
+antibot enable 
 ورود ربات ها ممنوع
 
-!antibot disable
+antibot disable
 ورود ربات ها ازاد
 
-!unlock xxxx
+unlock xxxx
 [*name*leave*member]
 [*fosh*ads]
 [chat*join*photo]
@@ -439,86 +436,84 @@ NOD32 Commands list :
 
 7-Fun time ^
 
-!time country city
+time country city
 ساعت کشور مورد نظر
 
-!loc country city
+loc country city
 مشخصات کشور و شهر مورد نظر
 
-!google
+google
 سرچ مطلب مورد نظر از گوگل
  
- !gps
+ gps
  مکان کشور , شهر مورد نظر تحت گوگل
  
- !calc 3+1
+ calc 3+1
  انجام محاسبات ریاضی
 
 8-Service Provider ^
 
-!newlink
+newlink
 ایجاد لینک جدید
 
-!link
+link
 نمایش لینک گروه
 
-!linkpv
+linkpv
 فرستادن لینک گروه تو پیوی
 (حتما شماره ربات را سیو کنید)
 
-!invite username
+invite username
 اضافه کردن شخص تو گروه
 (حتما شماره ربات را سیو کرده باشد)
 
 9-Member Profile and Group ^
-!owner
+owner
 مدیر گروه
 
-!id
+id
 ایدی شخص مورد نظر
 
-!res [username]
+res [username]
 در اوردن ایدی شخص مورد نظر
 
-!info 
+info 
 مخشصات فرد مورد نظر
 
-!settings
+settings
 تنظیمات فعلی گروه
 
 10-filter word Mode ^
 
-!filter set (word)
+filter set (word)
 اضافه کردن کلمه جدید به لیست
 
-!filter del (word)
+filter del (word)
 حذف کلمه از لیست
 
-!filter warn (word)
+filter warn (word)
 اخطار به کلمه فیتر شده
 
-!filterlist
+filterlist
 لیست کلمات فیلتر شده
 
 11-bot number & support ^
 
-!botnumber
-دریافت شماره ربات
-
-!support
+support
 دعوت سازنده ربات به گروه
 (در صورت وجود مشکل)
 
-!version
+version
 ورژن ربات
 
-!feedback (text)
+feedback (text)
 ارسال نظرات به سازنده
 
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
 
-channel: @Nod32Team
+channel: @iranpower_ch
+sudo :@shayan31323
 
 G00D LUCK ^_^
 ]]
