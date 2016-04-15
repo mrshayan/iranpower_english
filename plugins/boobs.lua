@@ -63,6 +63,7 @@ return {
     "!butts: Get a butts NSFW image. 🔞"
   },
   patterns = {
+    "^[Bb]oobs$",
     "^!boobs$",
     "^!butts$"
   }, 
