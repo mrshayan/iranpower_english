@@ -1,15 +1,15 @@
 do
 
 function run(msg, matches)
-  return 'NOD32-BOT v8'.. VERSION .. [[ 
+  return 'iranpower v8'.. VERSION .. [[ 
  
-  Developer : @Behroozyaghi
+  Developer : @shayan31323
   
-  Channel : @Nod32team
+  Channel : @iranpower_ch
   
-  Open git : https://github.com/BH-YAGHI/NOD32-BOT.git
+  Open git : https://github.com/seedteam/teleseed.git
   
-  NOD32 VERSION 8
+  iranpower VERSION 8
   
   All rights reserved.
   __________________]]
@@ -19,6 +19,7 @@ return {
   description = "Shows bot version", 
   usage = "!version: Shows bot version",
   patterns = {
+    "^([Vv]ersion)$",
     "^!version$"
   }, 
   run = run 
